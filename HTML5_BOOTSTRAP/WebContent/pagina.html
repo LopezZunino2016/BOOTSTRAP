@@ -12,8 +12,9 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/Pagina.css">
+	
 </head>
-<body>
+<body onload="cargar()">
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 		<a class="navbar-brand" href="#">Mi Web</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -26,8 +27,7 @@
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active"><a class="nav-link"
 					href="Pagina.html">Inicio</a></li>
-				<li class="nav-item"><a class="nav-link" href="#container">Result</a></li>
-				<li class="nav-item"><a class="nav-link" href="http://www.realbetisbalompie.es/es/primer-equipo/partidos/">Partidos</a></li>
+				<li class="nav-item"><a class="nav-link" href="#resultado">Result</a></li>
 				<li class="nav-item"><a class="nav-link" href="#Estadio">Estadio</a></li>
 				<li class="nav-item"><a class="nav-link" href="#articulo2">Jug Historicos</a></li>
 			</ul>
@@ -48,7 +48,7 @@
 					<div class="card" style="width: 22rem;">
 						<div class="card-body centrar">
 							<h4 class="card-title centrar">Partidos Y Resultados</h4>
-							<table class="table table-responsive table-striped table-bordered table-hover table-sm table-condensed">
+							<table id="resultado" class="table table-responsive table-striped table-bordered table-hover table-sm table-condensed">
 								<thead class="thead-default">
 									<tr>
 										<th>Nº</th>
@@ -144,75 +144,76 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>1</td>
-										<td>Barcelona</td>
-										<td>9</td>
-										<td>8</td>
-										<td>1</td>
-										<td>0</td>
-										<td>26</td>
-										<td>3</td>
-										<td>25</td>
+										<td class="champions">1</td>
+										<td class="champions">Barcelona</td>
+										<td class="champions">9</td>
+										<td class="champions">8</td>
+										<td class="champions">1</td>
+										<td class="champions">0</td>
+										<td class="champions">26</td>
+										<td class="champions">3</td>
+										<td class="champions">25</td>
 									</tr>
 									<tr>
-										<td>2</td>
-										<td>Valencia</td>
-										<td>10</td>
-										<td>7</td>
-										<td>3</td>
-										<td>0</td>
-										<td>26</td>
-										<td>10</td>
-										<td>24</td>
+										<td class="champions">2</td>
+										<td class="champions">Valencia</td>
+										<td class="champions">10</td>
+										<td class="champions">7</td>
+										<td class="champions">3</td>
+										<td class="champions">0</td>
+										<td class="champions">26</td>
+										<td class="champions">10</td>
+										<td class="champions">24</td>
 									</tr>
 									<tr>
-										<td>3</td>
-										<td>R.Madrid</td>
-										<td>9</td>
-										<td>6</td>
-										<td>2</td>
-										<td>1</td>
-										<td>18</td>
-										<td>7</td>
-										<td>20</td>
+										<td class="champions">3</td>
+										<td class="champions">R.Madrid</td>
+										<td class="champions">9</td>
+										<td class="champions">6</td>
+										<td class="champions">2</td>
+										<td class="champions">1</td>
+										<td class="champions">18</td>
+										<td class="champions">7</td>
+										<td class="champions">20</td>
 									</tr>
 									<tr>
-										<td>4</td>
-										<td>At.Madrid</td>
-										<td>9</td>
-										<td>5</td>
-										<td>4</td>
-										<td>0</td>
-										<td>14</td>
-										<td>5</td>
-										<td>19</td>
+										<td class="champions">4</td>
+										<td class="champions">At.Madrid</td>
+										<td class="champions">9</td>
+										<td class="champions">5</td>
+										<td class="champions">4</td>
+										<td class="champions">0</td>
+										<td class="champions">14</td>
+										<td class="champions">5</td>
+										<td class="champions">19</td>
 									</tr>
 								</tbody>
 							</table>
 							<a href="#" id="leerMas" onclick="mostrarC()">Leer más...</a>
+							
 							<table id="cuatro" class="table table-responsive table-striped table-bordered table-hover table-sm table-condensed">
 								<tbody>
 									<tr>
-										<td>5</td>
-										<td>Leganés</td>
-										<td>9</td>
-										<td>5</td>
-										<td>2</td>
-										<td>2</td>
-										<td>8</td>
-										<td>3</td>
-										<td>17</td>
+										<td class="uefa">5</td>
+										<td class="uefa">Leganés</td>
+										<td class="uefa">9</td>
+										<td class="uefa">5</td>
+										<td class="uefa">2</td>
+										<td class="uefa">2</td>
+										<td class="uefa">8</td>
+										<td class="uefa">3</td>
+										<td class="uefa">17</td>
 									</tr>
 									<tr>
-										<td>6</td>
-										<td>Villareal</td>
-										<td>9</td>
-										<td>5</td>
-										<td>1</td>
-										<td>3</td>
-										<td>15</td>
-										<td>10</td>
-										<td>16</td>
+										<td class="uefa">6</td>
+										<td class="uefa">Villareal</td>
+										<td class="uefa">9</td>
+										<td class="uefa">5</td>
+										<td class="uefa">1</td>
+										<td class="uefa">3</td>
+										<td class="uefa">15</td>
+										<td class="uefa">10</td>
+										<td class="uefa">16</td>
 									</tr>
 									<tr>
 										<td>7</td>
@@ -336,37 +337,37 @@
 										<td>7</td>
 									</tr>
 									<tr>
-										<td>18</td>
-										<td>Las Palmas</td>
-										<td>9</td>
-										<td>2</td>
-										<td>0</td>
-										<td>7</td>
-										<td>7</td>
-										<td>22</td>
-										<td>6</td>
+										<td class="descenso">18</td>
+										<td class="descenso">Las Palmas</td>
+										<td class="descenso">9</td>
+										<td class="descenso">2</td>
+										<td class="descenso">0</td>
+										<td class="descenso">7</td>
+										<td class="descenso">7</td>
+										<td class="descenso">22</td>
+										<td class="descenso">6</td>
 									</tr>
 									<tr>
-										<td>19</td>
-										<td>Alaves</td>
-										<td>10</td>
-										<td>1</td>
-										<td>0</td>
-										<td>9</td>
-										<td>3</td>
-										<td>15</td>
-										<td>3</td>
+										<td class="descenso">19</td>
+										<td class="descenso">Alaves</td>
+										<td class="descenso">10</td>
+										<td class="descenso">1</td>
+										<td class="descenso">0</td>
+										<td class="descenso">9</td>
+										<td class="descenso">3</td>
+										<td class="descenso">15</td>
+										<td class="descenso">3</td>
 									</tr>
 									<tr>
-										<td>20</td>
-										<td>Málaga</td>
-										<td>9</td>
-										<td>0</td>
-										<td>1</td>
-										<td>8</td>
-										<td>4</td>
-										<td>20</td>
-										<td>1</td>
+										<td class="descenso">20</td>
+										<td class="descenso">Málaga</td>
+										<td class="descenso">9</td>
+										<td class="descenso">0</td>
+										<td class="descenso">1</td>
+										<td class="descenso">8</td>
+										<td class="descenso">4</td>
+										<td class="descenso">20</td>
+										<td class="descenso">1</td>
 									</tr>
 								</tbody>
 							</table>
