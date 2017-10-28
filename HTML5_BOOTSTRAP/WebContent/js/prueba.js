@@ -27,3 +27,19 @@ function login(){
 function buscar(){
 	alert("hola");
 }
+function mostrar(){
+    document.getElementById('segundo').style.display="block";
+    document.getElementById('contraer').style.display="block";
+}
+function mostrarC(){
+    document.getElementById('cuatro').style.display="block";
+    document.getElementById('contraerC').style.display="block";
+}
+function contraer(){
+    document.getElementById('segundo').style.display="none";
+    document.getElementById('contraer').style.display="none";
+}
+function contraerC(){
+    document.getElementById('cuatro').style.display="none";
+    document.getElementById('contraerC').style.display="none";
+}
